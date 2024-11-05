@@ -75,8 +75,10 @@ header {
   width: 100%;
 }
 
-.header-contents .logo p {
+.header-contents .logo img {
+  height: 25px;
   font-size: 20px;
+  box-shadow: none;
 }
 
 .header-contents {
