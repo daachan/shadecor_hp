@@ -58,7 +58,7 @@ p {
 }
 
 .detail-button:hover {
-  border-bottom: solid 1px #fefefe;
+  text-decoration: underline;
 }
 
 /* ------------------ */
@@ -256,14 +256,14 @@ header {
 }
 
 /*--change--*/
-.timeline li {
-  display: flex;
-  padding: 20px 0 20px;
-  align-items: center;
+.timeline a {
   transition: 0.5s;
+  padding: 20px 0 20px;
+  display: flex;
+  align-items: center;
 }
 
-.timeline li:hover{
+.timeline li a:hover {
   background-color: #fefefe;
   color: #000000;
 }
@@ -408,6 +408,10 @@ header {
   margin: 0 30px 50px;
   padding-bottom: 100px;
   flex-flow: column;
+}
+
+.disp-content:hover{
+  text-decoration: underline;
 }
 
 .disp-content img {

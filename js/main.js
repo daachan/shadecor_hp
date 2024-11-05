@@ -1,4 +1,5 @@
 $(function($){
+    //scroll setting
     $(window).on('load scroll', function(){
         
         var horizonAnime = 'horizon-line-anime';
