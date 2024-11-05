@@ -99,7 +99,6 @@ header {
 
 .contact-button {
   text-align: center;
-  /* ~~~~add~~~~ */
   background-color: #000000;
   color: #fefefe;
   padding: 5px 10px;
@@ -147,7 +146,6 @@ header {
   margin-bottom: 20px;
 }
 
-/* ~~~~add~~~~ */
 .eye-info a {
   display: inline;
   text-decoration: underline;
@@ -499,7 +497,6 @@ footer .sns {
 }
 
 .line-works {
-  position: relative;
   transform: translateX(10px);
   height: 100%;
 }

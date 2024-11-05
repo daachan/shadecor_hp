@@ -43,6 +43,23 @@ a:hover {
 }
 /* ~~~~add~~~~~ */
 
+img {
+  box-shadow: 0 0 10px #000000;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.detail-button {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.detail-button:hover {
+  text-decoration: underline;
+}
+
 /* --------------------- */
 
 html {
@@ -57,8 +74,10 @@ header {
   width: 100%;
 }
 
-.header-contents .logo p {
+.header-contents .logo img {
+  height: 25px;
   font-size: 20px;
+  box-shadow: none;
 }
 
 .header-contents {
@@ -75,7 +94,6 @@ header {
 
 .header-contents a {
   display: block;
-  text-decoration: none;
 }
 
 .contact-button {
@@ -277,6 +295,7 @@ footer .sns {
   height: 1px;
   width: calc(100% / 12 * 11);
   background-color: #fefefe;
+  transition: 1.5s;
 }
 
 .main-horizon-line:nth-child(5) {
@@ -315,42 +334,6 @@ footer .sns {
 
 /* -------------------- */
 
-.grid__item {
-  border: #000000 1px solid;
-}
-
 .grid__item:nth-child(1) {
-  background: #000000;
-}
-
-.grid__item:nth-child(2) {
-  background: #000000;
-}
-
-.grid__item:nth-child(3) {
-  background: #000000;
-}
-
-.grid__item:nth-child(4) {
-  background: #000000;
-}
-
-.grid__item:nth-child(5) {
-  background: #000000;
-}
-
-.grid__item:nth-child(6) {
-  background: #000000;
-}
-
-.grid__item:nth-child(7) {
-  background: #000000;
-}
-
-.grid__item:nth-child(8) {
-  background: #000000;
-}
-
-.grid__item:nth-child(9) {
   background: #000000;
 }

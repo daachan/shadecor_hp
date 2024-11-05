@@ -8,6 +8,7 @@ $(function($){
         var verticalLine = $('.vertical-line-anime');
         var fadeInAnime = 'fadeIn'
         var fadeIn = $('.fadeIn');
+        var workSlide = $('.works-slide')
 
         var scrollPos = $(window).scrollTop();
         var wh = $(window).height();
@@ -32,7 +33,8 @@ $(function($){
             var boxOffset = $(this).offset().top;
 
             if (scrollPos > boxOffset - wh + 200){
-                $(this).removeClass(fadeInAnime);
+                var newMarginTop = topIni + scrollPos;
+
             }
         });
     });
