@@ -31,17 +31,51 @@ h3 {
   font-weight: 600;
 }
 
+a {
+  color: #fefefe;
+  text-decoration: none; 
+} 
+
+a:hover {
+  opacity: 50%;
+  transition: 0.5s;
+}
+
+img {
+  box-shadow: 0 0 10px #000000;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.detail-button {
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.detail-button:hover {
+  text-decoration: underline;
+}
+
 /* ------------------ */
 
+html {
+  background-color: black;
+  color: #ffffff;
+}
+
 header {
-  background: red;
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 9999;
   width: 100%;
 }
 
-.header-contents .logo p {
+.header-contents .logo img {
+  height: 25px;
   font-size: 20px;
+  box-shadow: none;
 }
 
 .header-contents {
@@ -58,15 +92,21 @@ header {
 
 .header-contents a {
   display: block;
-  text-decoration: none;
 }
 
 .contact-button {
   text-align: center;
-  background-color: #B2DFDB;
+  background-color: #000000;
+  color: #fefefe;
   padding: 5px 10px;
-  border: #000000 1px solid;
+  border: #fefefe 1.5px solid;
   border-radius: 10px;
+}
+
+.contact-button:hover {
+  color: #000000;
+  background-color: #fefefe;
+  opacity: 100%;
 }
 
 /* ------------------ */
@@ -105,6 +145,17 @@ header {
 
 .eye-info a {
   display: inline;
+  text-decoration: underline;
+}
+
+.sns ul {
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.sns-icon img {
+  max-width: 40px;
+  height: 40px;
 }
 
 /* ------------------ */
@@ -132,20 +183,26 @@ header {
   list-style: none;
 }
 
-.timeline li {
+.timeline a {
+  transition: 0.5s;
+  padding: 20px 0 20px;
   display: flex;
-  margin-bottom: 75px;
   align-items: center;
+}
+
+.timeline li a:hover {
+  background-color: #fefefe;
+  color: #000000;
 }
 
 .timeline-content {
   gap: 5%;
-  border-bottom: #000000 2px solid;
 }
 
 .timeline-content img {
   width: 5%;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .timeline-content p {
@@ -168,54 +225,54 @@ header {
 /* ------------------ */
 
 .press-contents {
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
 }
 
 .press-contents .center {
-    padding: 75px 10px;
-    text-align: center;
+  padding: 75px 10px;
+  text-align: center;
 }
 
 .press-contents .title-contents {
-    margin-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .pdf-link {
-    display: flex;
-    margin-bottom: 75px;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  margin-bottom: 75px;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* ------------------ */
 
 .follow-contents {
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
 }
 
 .follow-contents .center {
-    padding: 75px 10px;
-    text-align: center;
+  padding: 75px 10px;
+  text-align: center;
 }
 
 .follow-contents .title-contents {
-    margin-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 .follow-sns-gallery {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 75px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 75px;
 }
 
 .sns-gallery-contents {
-    position: relative;
-    z-index: 1;
-    width: 25%;
-    aspect-ratio: 1 / 1;
-    background-color: #93ffbe;
+  position: relative;
+  z-index: 1;
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  background-color: #93ffbe;
 }
 
 /* .sns-gallery-contents img {
@@ -224,7 +281,7 @@ header {
 } */
 
 .sns-gallery-contents img:nth-child(2) {
-    position: absolute;
+  position: absolute;
 }
 
 /* ------------------ */
@@ -238,44 +295,69 @@ footer .sns {
   width: 50%;
 }
 
-/* -------tmp------- */
+/* main horizon layout */
 
-.grid__item {
-  border: #000000 1px solid;
+.main-horizon-line {
+  display: block;
+  position: absolute;
+  height: 1px;
+  background-color: #fefefe;
+  transition: 1.5s;
 }
+
+.main-horizon-line-typeA {
+  width: calc(100% / 12 * 11);
+}
+
+.main-horizon-line-typeB {
+  margin-left: calc(100% / 12);
+  width: calc(100% / 12 * 11);
+}
+
+.main-horizon-line-typeC {
+  width: 100%;
+}
+
+.horizon-line-anime {
+  width: 0;
+}
+
+/* main vertical layout */
+
+.sub-vertical-line {
+  display: block;
+  width: 1px;
+  background-color: #fefefe;
+  height: 100%;
+  transition: 1.5s;
+}
+
+.inf-vertical-line {
+  height: 110%;
+}
+
+.line-left {
+  position: relative;
+  margin-left: auto;
+}
+
+.line-right {
+  position: relative;
+  margin-right: auto;
+  height: 110%;
+}
+
+.vertical-line-anime {
+  height: 0;
+}
+
+/* --- fixed line layout --- */
+.timeline li {
+  border-bottom: #fefefe 1px solid;
+}
+
+/* -------bg style------- */
 
 .grid__item:nth-child(1) {
-  background: #FFCDD2;
-}
-
-.grid__item:nth-child(2) {
-  background: #E1BEE7;
-}
-
-.grid__item:nth-child(3) {
-  background: #C5CAE9;
-}
-
-.grid__item:nth-child(4) {
-  background: #B3E5FC;
-}
-
-.grid__item:nth-child(5) {
-  background: #B2DFDB;
-}
-
-.grid__item:nth-child(6) {
-  background: #DCEDC8;
-}
-
-.grid__item:nth-child(7) {
-  background: #FFF9C4;
-}
-
-.grid__item:nth-child(8) {
-  background: #FFCCBC;
-}
-
-.grid__item:nth-child(9) {
-  background: #F8BBD0;
+  background: #000000;
 }
