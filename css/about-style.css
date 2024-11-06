@@ -219,8 +219,18 @@ header {
 .achieve-gallery-contents {
   aspect-ratio: 1 / 1;
   width: 30%;
-  background-color: aquamarine;
+}
 
+.achieve-gallery-contents:nth-child(1){
+  background-image: url(../src/index_info_content.jpg);
+}
+
+.achieve-gallery-contents:nth-child(2){
+  background-image: url(../src/a-tune.jpg);
+}
+
+.achieve-gallery-contents:nth-child(3){
+  background-image: url(../src/shingetsu.jpg);
 }
 
 .achieve-gallery-contents img {
@@ -246,12 +256,8 @@ header {
   text-align: center;
 }
 
-.activity-contents .title-contents {
-  margin-bottom: 75px; 
-  /* 75px? or 50px? */
-}
-
 .activity-inf {
+  margin: 75px 0;
   display: flex;
   text-align: left;
   justify-content: space-between;
@@ -293,24 +299,42 @@ footer .sns {
 .main-horizon-line {
   display: block;
   height: 1px;
-  width: calc(100% / 12 * 11);
   background-color: #fefefe;
   transition: 1.5s;
 }
 
-.main-horizon-line:nth-child(5) {
-  margin-left: calc(100% / 12);
+.main-horizon-line-typeA {
+  width: calc(100% / 12 * 11);
 }
 
-.main-horizon-line:last-of-type {
+.main-horizon-line-typeB {
+  margin-left: calc(100% / 12);
+  width: calc(100% / 12 * 11);
+}
+
+.main-horizon-line-typeC {
   width: 100%;
 }
 
 .sub-horizon-line {
   display: block;
   height: 1px;
-  width: calc(100% / 12 * 11);
   background-color: #fefefe;
+  transition: 1.5s;
+}
+
+.sub-horizon-line-typeA {
+  width: calc(110% + 20px);
+  transform: translateX(-10px);
+}
+
+.sub-horizon-line-typeB {
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+}
+
+.horizon-line-anime {
+  width: 0;
 }
 
 /* -sub vertical line style- */
@@ -319,6 +343,7 @@ footer .sns {
   display: block;
   width: 1px;
   background-color: #fefefe;
+  transition: 1.5s;
 }
 
 .line-left {
@@ -326,10 +351,20 @@ footer .sns {
   margin-left: auto;
 }
 
+.line-right {
+  height: 40%;
+  margin-top: calc(600px + 150px + 75px);
+  margin-right: auto;
+}
+
 .line-vert-a {
   height: 110%;
   margin-left: auto;
   position: relative;
+}
+
+.vertical-line-anime {
+  height: 0;
 }
 
 /* -------------------- */
