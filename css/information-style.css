@@ -232,6 +232,7 @@ header {
 .press-contents .center {
   padding: 75px 10px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .press-contents .title-contents {
@@ -336,6 +337,11 @@ footer .sns {
   height: 110%;
 }
 
+.follow-vertical-line {
+  height: calc(100% + 20px);
+  transform: translateY(-20px);
+}
+
 .line-left {
   position: relative;
   margin-left: auto;
@@ -360,4 +366,11 @@ footer .sns {
 
 .grid__item:nth-child(1) {
   background: #000000;
+}
+
+
+.bg-section-01 {
+  background-image: url(../src/bg-test2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
