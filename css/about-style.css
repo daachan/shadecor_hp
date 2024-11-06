@@ -372,3 +372,18 @@ footer .sns {
 .grid__item:nth-child(1) {
   background: #000000;
 }
+
+
+/* ----bg section---- */
+
+.bg-section-01 {
+  background-image: url(../src/bg-test2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-section-02 {
+  background-image: url(../src/bg-test2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
