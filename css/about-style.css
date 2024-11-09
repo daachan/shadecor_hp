@@ -297,6 +297,7 @@ footer .sns {
 /* -main horizon line style- */
 
 .main-horizon-line {
+  position: absolute;
   display: block;
   height: 1px;
   background-color: #fefefe;
