@@ -31,6 +31,7 @@ h3 {
   font-weight: 600;
 }
 
+/* ~~~~add~~~~ */
 a {
   color: #fefefe;
   text-decoration: none; 
@@ -40,10 +41,11 @@ a:hover {
   opacity: 50%;
   transition: 0.5s;
 }
+/* ~~~~add~~~~~ */
 
-img {
+/* img {
   box-shadow: 0 0 10px #000000;
-}
+} */
 
 p {
   line-height: 1.8em;
@@ -58,12 +60,12 @@ p {
   text-decoration: underline;
 }
 
-html {
-  background-color: black;
-  color: #ffffff;
-}
-
 /* --------------------- */
+
+html {
+  background-color: #000000;
+  color: #fefefe;
+}
 
 header {
   background-color: rgba(0, 0, 0, 0.8);
@@ -160,61 +162,39 @@ header {
 
 /* -------------------- */
 
-.works-page-contents {
+.disp-img {
+  width: 100%;
+  height: 90vh;
+}
+
+.disp-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.disp-contents {
   display: grid;
   grid-template-columns: 1fr 11fr;
 }
 
-.works-page-contents .second {
-  padding: 75px 10px;
-  text-align: left;
-}
-
-.works-page-contents .title-contents {
-  margin-bottom: 75px;
-}
-
-.works-page-contents .title-contents p:nth-child(2) {
-  margin-bottom: 30px;
-}
-
-.works-page-gallery {
+.disp-text-contents {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 100px 10px;
+  gap: 75px;
 }
 
-.disp-content {
-  display: flex;
-  width: 30%;
-  margin-bottom: 100px;
-  flex-flow: column;
+.disp-text-contents h2 {
+  margin-bottom: 10px;
 }
 
-.disp-content:hover {
-  text-decoration: underline;
-}
-
-.disp-content img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-.disp-inf {
-  padding: 20px 10px 0;
-}
-
-.disp-title {
-  margin-bottom: 20px;
-}
-
-.disp-title p {
-  font-weight: 200;
+.detail-text {
+  margin-top: 10px;
 }
 
 
-/* ------------------ */
+/* -------------------- */
 
 footer {
   padding: 50px 10%;
@@ -225,12 +205,12 @@ footer .sns {
   width: 50%;
 }
 
-/* main horizon layout */
+/* -main horizon line style- */
 
 .main-horizon-line {
   display: block;
-  position: absolute;
   height: 1px;
+  position: absolute;
   background-color: #fefefe;
   transition: 1.5s;
 }
@@ -243,11 +223,15 @@ footer .sns {
   width: 100%;
 }
 
+.main-horizon-line-typeC {
+  width: 100%;
+}
+
 .horizon-line-anime {
   width: 0;
 }
 
-/* --- main vertical layout --- */
+/* -sub vertical line style- */
 
 .sub-vertical-line {
   display: block;
@@ -265,15 +249,16 @@ footer .sns {
   height: 0;
 }
 
-/* -------bg style------- */
-
-.bg-section-01 {
-  background-image: url(../src/bg-test2.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+/* ----------- */
 
 .grid__item:nth-child(1) {
   background: #000000;
 }
+
+.bg-section-01 {
+  background-image: url(../src/bg-test2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
