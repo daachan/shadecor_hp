@@ -68,7 +68,7 @@ html {
 }
 
 header {
-  background: none;
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 9999;
   width: 100%;
