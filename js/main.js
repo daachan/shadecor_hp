@@ -12,6 +12,8 @@ $(function($){
 
         var scrollPos = $(window).scrollTop();
         var wh = $(window).height();
+
+        var checkOpen = $('header-menu');
         
         horizonLine.each(function(){
             var boxOffset = $(this).offset().top;
@@ -37,5 +39,10 @@ $(function($){
 
             }
         });
+    });
+
+    $('#hamburger').on('click', function() {
+        $('#hamburger').toggleClass("open");
+        $('.header-menu').toggleClass("open");
     });
 });
