@@ -86,7 +86,24 @@ p {
 
 /* mini tablet screen - big smart phone */
 @media  screen and (max-width: 768px) { 
-    
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 10px;
+  }
 }
 
 /* iPhone SE */
@@ -339,7 +356,12 @@ header {
     align-items: center;
   }
 
+  .eye-title p:nth-child(1){
+    font-size: 48px;
+  }
+
   .eye-title p:nth-child(2) {
+    font-size: 10px;
     position: relative;
     top: -20px;
   }
@@ -351,6 +373,15 @@ header {
 
   .eye-right-contents .sns {
     display: none;
+  }
+
+  .eye-info {
+    text-align: center;
+  }
+
+  .sns-icon img {
+    max-width: 32px;
+    height: 32px;
   }
 }
 
