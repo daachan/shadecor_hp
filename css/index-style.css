@@ -685,8 +685,8 @@ header {
     margin-bottom: 100px;
   }
 
-  .timeline-content {
-    margin: 0 5%;
+  .timeline a {
+    padding: 0 5%;
     gap: 5%;
   }
 
