@@ -187,7 +187,7 @@ header {
   justify-content: space-between;
 }
 
-.pj-inf:nth-child(3) {
+.pj-inf:nth-child(4) {
   flex-direction: row-reverse;
 }
 
@@ -210,6 +210,7 @@ header {
 .pj-inf img {
   width: 45%;
   height: 600px;
+  object-fit: cover;
 }
 
 /* -------------------- */

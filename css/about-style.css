@@ -276,6 +276,7 @@ header {
   width: 45%;
   height: 600px;
   background-color: aquamarine;
+  object-fit: cover;
 }
 
 .activity-inf:nth-child(4) {
