@@ -54,6 +54,11 @@ p {
   transition: 0.5s;
 }
 
+/* TODO? */
+.detail-button p {
+  white-space: nowrap;
+}
+
 .detail-button:hover {
   text-decoration: underline;
 }
@@ -108,7 +113,24 @@ p {
 
 /* iPhone SE */
 @media  screen and (max-width: 500px) { 
-    
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 10px;
+  }
 }
 
 /* ------------------ */
@@ -213,14 +235,14 @@ header {
   }
 
   .header-menu li {
-    padding-bottom: 10px;
-    padding-left: 3px;
+    margin-bottom: 10px;
     width: 100%;
     border-bottom: solid 1px #fefefe;
   }
 
   .header-menu a {
     font-size: 18px;
+    display: block;
   }
 
   .hamburger {
@@ -345,15 +367,17 @@ header {
 @media  screen and (max-width: 768px) {   
   .eye-catch-contents {
     grid-template-columns: auto;
+    height: 90vh;
   }
 
   .eye-catch-contents .center {
-    padding: 10px 10px 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 10px 50px;
+    text-align: center;
   }
 
   .eye-title p:nth-child(1){
@@ -568,11 +592,18 @@ header {
   .ac-contents img {
     width: 100%;
   }
+
+  .ac-text .title-contents h1 {
+    font-size: 20px;
+  }  
+  
 }
 
 /* iPhone SE */
 @media  screen and (max-width: 500px) { 
-    
+  .ac-text .title-contents h1 {
+    font-size: 16px;
+  }  
 }
 
 /* ------------------ */
@@ -666,6 +697,10 @@ header {
     font-size: 14px;
   }
 
+  .timeline-content img {
+    width: 7%;
+  }
+
   .date p:nth-child(1) {
     font-size: 36px;
   }
@@ -686,7 +721,7 @@ header {
   }
 
   .timeline a {
-    padding: 0 5%;
+    padding: 10px 10%;
     gap: 5%;
   }
 
@@ -701,11 +736,33 @@ header {
   .date {
     margin-left: 0;
   }
+
+  .timeline-content p {
+    font-size: 12px;
+  }
+
+  .date p:nth-child(1) {
+    font-size: 24px;
+  }
+
+  .date p:nth-child(2) {
+    font-size: 8px;
+  }
 }
 
 /* iPhone SE */
 @media  screen and (max-width: 500px) { 
-    
+  .timeline-content p {
+    font-size: 10px;
+  }
+
+  .date p:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .date p:nth-child(2) {
+    font-size: 6px;
+  }
 }
 
 /* -------------------- */
@@ -765,8 +822,8 @@ header {
 
 .pj-comment {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 75px;
+  padding-top: 100px;
+  padding-bottom: 75px;
 }
 
 .pj-comment h2 {
@@ -836,7 +893,7 @@ header {
   }
 
   .pj-comment {
-    padding: 0 calc(5% + 20px);
+    padding: 100px calc(5% + 20px) 75px;
   }
 }
 
