@@ -510,7 +510,7 @@ header {
 }
 
 .achieve-contents .center {
-  padding: 75px 10px;
+  padding: 75px 10px 150px;
   text-align: center;
 }
 
@@ -523,29 +523,36 @@ header {
   display: flex;
   margin: 0 10px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .achieve-gallery-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   aspect-ratio: 1 / 1;
   width: 30%;
+  background-size: cover;
 }
 
 .achieve-gallery-contents:nth-child(1){
-  background-image: url(../src/index_info_content.jpg);
+  background-image: url(../src/img-ref/1.png);
 }
 
 .achieve-gallery-contents:nth-child(2){
-  background-image: url(../src/a-tune.jpg);
+  background-image: url(../src/img-ref/2.png);
 }
 
 .achieve-gallery-contents:nth-child(3){
-  background-image: url(../src/shingetsu.jpg);
+  background-image: url(../src/img-ref/3.png);
 }
 
 .achieve-gallery-contents img {
   aspect-ratio: 1 / 1;
-  width: 100px;
+  width: 60%;
   margin-bottom: 10px;
+  box-shadow: none;
 }
 
 .achieve-gallery-contents p {
@@ -561,12 +568,31 @@ header {
 
 /* mini tablet screen - big smart phone */
 @media  screen and (max-width: 768px) { 
+  .achieve-contents {
+    grid-template-columns: auto;
+  }
 
+  .achieve-gallery-contents img {
+    width: 40%;
+    margin-bottom: 5px;
+  }
+
+  .achieve-gallery-contents p {
+    font-weight: 400;
+    margin: 0 5%;
+  }
 }
 
 /* iPhone SE */
 @media  screen and (max-width: 500px) { 
-    
+  .achieve-gallery {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .achieve-gallery-contents {
+    width: 100%;
+  }
 }
 
 /* -------------------- */
@@ -610,12 +636,63 @@ header {
 
 /* big tablet phone */
 @media  screen and (max-width: 1200px) { 
-
+  .activity-contents {
+    grid-template-columns: 1fr 18fr 1fr;
+  }
+  
+  .activity-inf-text {
+    width: 48%;
+  }
+  
+  .activity-inf-text h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .activity-inf img {
+    width: 48%;
+    max-height: 400px;
+  }
+  
+  .activity-inf:nth-child(4) {
+    flex-direction: row-reverse;
+  }
 }
 
 /* mini tablet screen - big smart phone */
 @media  screen and (max-width: 768px) { 
+  .activity-contents {
+    grid-template-columns: auto;
+  }
 
+  .activity-contents .center {
+    padding: 75px 5%;
+  }
+
+  .activity-inf {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .activity-inf-text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  .activity-inf-text h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  
+  .activity-inf img {
+    width: 100%;
+  }
+  
+  .activity-inf:nth-child(4) {
+    flex-direction: column;
+  }
+  
 }
 
 /* iPhone SE */
@@ -757,12 +834,45 @@ footer .sns {
 
 /* big tablet phone */
 @media  screen and (max-width: 1200px) {
+  .main-horizon-line-typeA {
+    width: calc(100% / 20 * 19);
+  }
   
+  .main-horizon-line-typeB {
+    margin-left: calc(100% / 20);
+    width: calc(100% / 20 * 19);
+  }
+  
+  .sub-horizon-line-typeA {
+    width: calc(100% + 20px);
+    transform: translateX(-10px);
+  }
+
+  .line-right {
+    margin-top: calc(600px);
+  }
+
 }
 
 /* mini tablet screen - big smart phone */
 @media screen and (max-width: 768px) { 
- 
+  .main-horizon-line {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sub-horizon-line {
+    width: calc(100% + 20px);
+    margin-left: 0;
+  }
+
+  .grid__item:nth-child(1) {
+    display: none;
+  }
+
+  .grid__item:nth-child(3):not(.third) {
+    display: none;
+  }
 }
 
 /* iPhone SE */
