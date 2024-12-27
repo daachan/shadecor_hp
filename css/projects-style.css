@@ -231,7 +231,7 @@ header {
   display: flex;
   margin: 150px auto;
   flex-direction: column;
-  gap: 30px;
+  gap: 30vh;
 }
 
 .question {
@@ -249,6 +249,7 @@ header {
 
 .question img {
   width: 45%;
+  max-height: 300px;
   aspect-ratio: 1 / 1;
   background-color: #000000;
 }
@@ -265,6 +266,7 @@ header {
 }
 
 .pj-comment {
+  padding: 100px 0 100px;
   text-align: center;
 }
 
