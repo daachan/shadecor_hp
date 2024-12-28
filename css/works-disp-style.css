@@ -517,6 +517,7 @@ footer .sns {
   position: absolute;
   background-color: #fefefe;
   transition: 1.5s;
+  z-index: 9999;
 }
 
 .main-horizon-line-typeA {
@@ -524,6 +525,7 @@ footer .sns {
 }
 
 .main-horizon-line-typeB {
+  position: inherit;
   width: 100%;
 }
 
