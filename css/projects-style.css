@@ -796,7 +796,7 @@ footer .sns {
 
 /* mini tablet screen - big smart phone */
 @media screen and (max-width: 768px) { 
-
+  
   .main-horizon-line-typeA {
     width: 100%;
   }
