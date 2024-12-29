@@ -347,7 +347,6 @@ header {
 .eye-info a {
   display: inline;
   text-decoration: underline;
-  white-space: nowrap;
 }
 
 .sns ul {
@@ -406,6 +405,10 @@ header {
 
   .eye-info {
     text-align: center;
+  }
+
+  .eye-info a {
+    white-space: nowrap;
   }
 
   .sns-icon img {
