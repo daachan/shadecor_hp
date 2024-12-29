@@ -648,15 +648,30 @@ header {
 }
 
 .sns-gallery-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
   width: 25%;
   aspect-ratio: 1 / 1;
-  background-color: #93ffbe;
+}
+
+.sns-gallery-contents img:nth-child(1){
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .sns-gallery-contents img:nth-child(2) {
   position: absolute;
+  z-index: 3;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  box-shadow: none;
+
 }
 
 /* big tablet phone */
